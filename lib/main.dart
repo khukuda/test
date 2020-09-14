@@ -12,8 +12,8 @@ import 'package:firebase_analytics/observer.dart';
 import 'tabs_page.dart';
 
 Future<void> main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
+//  WidgetsFlutterBinding.ensureInitialized();
+//  await Firebase.initializeApp();
   runApp(MyApp());
 }
 
