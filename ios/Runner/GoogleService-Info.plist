@@ -29,7 +29,7 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:335712567992:ios:0af30cb0efb398a00d6a4d</string>
+	<string>1:335712567992:ios:3c6d070e6f4ab9340d6a4d</string>
 	<key>DATABASE_URL</key>
 	<string>https://test-8853e.firebaseio.com</string>
 </dict>
