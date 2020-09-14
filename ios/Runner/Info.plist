@@ -41,13 +41,15 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<!--
+	動かなかった：firebase_analyticsで認識しないので色々試し中
 	<key>CFBundleTypeRole</key>
 	<string>Editor</string>
 	<key>CFBundleURLSchemes</key>
-	<array>
+	<array>-->
 		<!-- TODO Replace this value: -->
-		<!-- Copied from GoogleService-Info.plist key REVERSED_CLIENT_ID -->
+		<!-- Copied from GoogleService-Info.plist key REVERSED_CLIENT_ID --><!--
 		<string>com.googleusercontent.apps.335712567992-nciidrjdg3eq6bvbiuh9h6kpf7fnge17</string>
-	</array>
+	</array>-->
 </dict>
 </plist>
