@@ -74,6 +74,7 @@
 				9740EEB11CF90186004384FC /* Flutter */,
 				97C146F01CF9000F007C117D /* Runner */,
 				97C146EF1CF9000F007C117D /* Products */,
+				C402FD7E9DA6F279205D8C27 /* GoogleService-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,7 +97,6 @@
 				1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */,
 				74858FAE1ED2DC5600515810 /* AppDelegate.swift */,
 				74858FAD1ED2DC5600515810 /* Runner-Bridging-Header.h */,
-				C402FD7E9DA6F279205D8C27 /* GoogleService-Info.plist */,
 			);
 			path = Runner;
 			sourceTree = "<group>";
