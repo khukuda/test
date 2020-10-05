@@ -1,10 +1,19 @@
+
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_messaging/firebase_messaging.dart';
+
+import 'package:test_project/notification_handler.dart';
+
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
+  final FirebaseMessaging _firebaseMessaging = FirebaseMessaging();
+  var token = await _firebaseMessaging.getToken();
+  _firebaseMessaging.requestNotificationPermissions();
+  print(token);
   runApp(MyApp());
 }
 
@@ -49,11 +58,21 @@ class MyHomePage extends StatefulWidget {
 
   final String title;
 
+  
+
   @override
   _MyHomePageState createState() => _MyHomePageState();
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+
+    initNotification();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -68,7 +87,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 await FirebaseFirestore.instance
                     .collection('users') // コレクションID
                     .doc('id_abc') // ドキュメントID
-                    .set({'name': '斎藤', 'age': 40},); // データ
+                    .set({'name': '斎藤', 'age': 50},); // データ
               },
             ),
           ],
